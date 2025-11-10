@@ -7,8 +7,8 @@
      Airline<input type="text" name="airline"><br>
      Departure <input type="date" name="dd"><br>
      Arrival<input type="date" name="ad"><br><br>
-     Too<input type="text" name="too"><br><br>
-     Flight Number<input type="number" name="fn"><br><br>
+     To<input type="text" name="too"><br><br>
+     Flight Number<input type="text" name="fn"><br><br>
      Terminal<input type="number" name="ter"><br><br>
     <input type="submit" name="submit">
 </form>
@@ -50,6 +50,8 @@ else
 
 
 $sql="SELECT*FROM air";
+
+
 $res=mysqli_query($conn,$sql);
 if(mysqli_num_rows($res)>0)
 {
